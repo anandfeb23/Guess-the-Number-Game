@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f06, #4a90e2);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#wrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+form {
+    margin-top: 1em;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #4a90e2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #357ABD;
+}
+
+.resultParas {
+    margin-top: 1em;
+}
+
+.resultParas p {
+    font-size: 1.1em;
+}
+
+.guesses, .lastResult {
+    font-weight: bold;
+}
+
+.lowOrHi {
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+#newGame {
+    cursor: pointer;
+}
+
+#newGame:hover {
+    background-color: darkblue;
+    color: yellow;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    label, .resultParas p, .lowOrHi {
+        font-size: 1em;
+    }
+
+    input[type="text"], input[type="submit"] {
+        font-size: 0.9em;
+    }
+
+    #wrapper {
+        padding: 1em;
+    }
+}
